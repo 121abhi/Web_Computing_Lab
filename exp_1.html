@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Using Only HTML5</title>
+</head>
+<body>
+    <!-- Header with an image -->
+    <header>
+        <img src="header-image.jpg" alt="LOGO">
+    </header>
+
+    <!-- Navigation links -->
+    <nav>
+        <ul>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </ul>
+    </nav>
+
+    <!-- Main content area with a table -->
+    <main>
+        <h1>Welcome to my Website!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet massa eget felis
+        venenatis scelerisque. Donec eget nisi sed erat ultrices malesuada id ut ipsum.</p>
+        <br>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Abhijeet Basant</td>
+                <td>20</td>
+                <td>abhi@example.com</td>
+            </tr>
+            <tr>
+                <td>Dylan Dsilva</td>
+                <td>19</td>
+                <td>dylan@example.com</td>
+            </tr>
+        </table>
+    </main>
+
+    <br>
+    <!-- Form for user input -->
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Unordered list -->
+    <p>Skill Set</p>
+    <ul>
+        <li>Web Development</li>
+        <li>Machine learning</li>
+        <li>SQL</li>
+    </ul>
+
+    <!-- Semantic elements -->
+    <section>
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet massa eget felis
+        venenatis scelerisque. Donec eget nisi sed erat ultrices malesuada id ut ipsum.</p>
+    </section>
+
+    <aside>
+        <h2>Related Links</h2>
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+    </aside>
+
+    <!-- HTML5 features -->
+    <audio controls>
+        <source src="audio-sample.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <video controls width="320" height="240">
+        <source src="video-sample.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+
+
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid black;"></canvas>
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+        ctx.fillStyle = "blue";
+        ctx.fillRect(10, 10, 150, 80);
+    </script>
+</body>
+</html>
